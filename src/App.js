@@ -12,6 +12,9 @@ function App() {
   return (
     <div>
       <h2>Pre-Contract Expenses</h2>
+
+      {/* can call information using just the attributes from above as well */}
+
       <ExpenseItem 
         title={expenses[0].title}
         amount={expenses[0].amount}
