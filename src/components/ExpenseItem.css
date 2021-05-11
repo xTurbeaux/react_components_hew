@@ -7,6 +7,14 @@
     margin: 1rem 0;
     border-radius: 12px;
     background-color: black;
+    border-bottom: double;
+    border-bottom-width: .5px !important;
+    border-bottom-color: #199e55 !important;
+  }
+
+  div.expense-item {
+    border-bottom-width: 1px !important;
+    border-bottom-color: #199e55 !important;
   }
   
   .expense-item__description {
@@ -20,11 +28,11 @@
   }
   
   .expense-item h2 {
-    color: #1ad36d;
+    color: #199e55;
     font-size: 1rem;
     flex: 1;
     margin: 0 1rem;
-    color: #1ad36d;
+    color: #199e55;
   }
   
   .expense-item__price {

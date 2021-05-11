@@ -1,23 +1,20 @@
-import Status from './Status';
 import ExpenseDate from './ExpenseDate';
-import ShipVariant from './ShipVariant';
-
 import './ExpenseItem.css';
 import './ExpenseDate.css';
 
 
-
-function PreMisDocs(data) {
+function ShipVariant(data) {
 
     return (
         <div className="expense-item">
             <ExpenseDate date={data.date} />
             <div className="expense-item__description">
-                <h2>{data.title}</h2>
-                <Status />
+                <div className="expense-item__description">
+                    <h2>{data.title}</h2>
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default PreMisDocs;
+export default ShipVariant;

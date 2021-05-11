@@ -1,5 +1,8 @@
 import  ExpenseItem from './components/ExpenseItem';
 import  PreMisDocs from './components/PreMisDocs';
+import ShipVariant from './components/ShipVariant';
+
+import './components/Global.css';
 
 function App() {
 
@@ -12,52 +15,69 @@ function App() {
   ];
 
   const preMisDocs = [
-    { id: 'd1', title: 'Bonus Clause', date: new Date(28888, 1, 28)},
+    { id: 'd1', title: 'Bonus Clause', date: new Date(2888, 1, 28)},
     { id: 'd2', title: 'Forfeiture Clause', date: new Date(2888, 1, 28)},
     { id: 'd3', title: 'Standing Mission Frag Order', date: new Date(2888, 1, 28)},
   ];
 
+  const model = [
+    { id: 'm1', title: 'M8', date: new Date(2887, 10, 20)},
+    { id: 'm2', title: 'M8B', date: new Date(2887, 10, 20)}
+]
+
   return (
     <div>
-      <h2>Pre-Mission Expenses</h2>
 
-      {/* can call information using just the attributes from above as well */}
+      <div>
+        <h2>Pre-Mission Expenses</h2>
 
-      <ExpenseItem 
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}  
-      />
-      <ExpenseItem 
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}  
-      />
-      <ExpenseItem 
-        title={expenses[2].title}
-        amount={expenses[2].amount}
-        date={expenses[2].date}  
-      />
-      <ExpenseItem 
-        title={expenses[3].title}
-        amount={expenses[3].amount}
-        date={expenses[3].date}  
-      />
+        {/* can call information using just the attributes from above as well */}
 
-    <h2>Mission Documents Status</h2>
+        <ExpenseItem 
+          title={expenses[0].title}
+          amount={expenses[0].amount}
+          date={expenses[0].date}  
+        />
+        <ExpenseItem 
+          title={expenses[1].title}
+          amount={expenses[1].amount}
+          date={expenses[1].date}  
+        />
+        <ExpenseItem 
+          title={expenses[2].title}
+          amount={expenses[2].amount}
+          date={expenses[2].date}  
+        />
+        <ExpenseItem 
+          title={expenses[3].title}
+          amount={expenses[3].amount}
+          date={expenses[3].date}  
+        />
 
-      <PreMisDocs 
-        title={preMisDocs[0].title}
-        date={preMisDocs[0].date} 
-      />
-      <PreMisDocs 
-        title={preMisDocs[1].title}
-        date={preMisDocs[1].date} 
-      />
-      <PreMisDocs 
-        title={preMisDocs[2].title}
-        date={preMisDocs[2].date} 
-      />
+      <h2>Mission Documents Status</h2>
+
+        <PreMisDocs 
+          title={preMisDocs[0].title}
+          date={preMisDocs[0].date} 
+        />
+        <PreMisDocs 
+          title={preMisDocs[1].title}
+          date={preMisDocs[1].date} 
+        />
+        <PreMisDocs 
+          title={preMisDocs[2].title}
+          date={preMisDocs[2].date} 
+        />
+
+      <h2>Mission Ship Variant</h2>
+
+        <ShipVariant 
+          title={model[1].title}
+          date={model[1].date}
+        />
+
+      </div>
+
     </div>
   );
 }
