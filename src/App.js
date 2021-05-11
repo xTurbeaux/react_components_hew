@@ -1,4 +1,5 @@
 import  ExpenseItem from './components/ExpenseItem';
+import  PreMisDocs from './components/PreMisDocs';
 
 function App() {
 
@@ -45,9 +46,19 @@ function App() {
 
     <h2>Mission Documents Status</h2>
 
-
+      <PreMisDocs 
+        title={preMisDocs[0].title}
+        date={preMisDocs[0].date} 
+      />
+      <PreMisDocs 
+        title={preMisDocs[1].title}
+        date={preMisDocs[1].date} 
+      />
+      <PreMisDocs 
+        title={preMisDocs[2].title}
+        date={preMisDocs[2].date} 
+      />
     </div>
   );
 }
-
 export default App;
