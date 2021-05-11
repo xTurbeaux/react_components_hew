@@ -2,6 +2,7 @@ import  ExpenseItem from './components/ExpenseItem';
 
 function App() {
 
+  // will soon be calls to the db for this info 
   const expenses = [
     { id: 'e1', title: 'Asset Insurance', amount: 10000.00, date: new Date(2888, 2, 28)},
     { id: 'e2', title: 'Life Insurance', amount: 100000.00, date: new Date(2888, 2, 28)},
@@ -9,9 +10,15 @@ function App() {
     { id: 'e4', title: 'Requested Ameneties', amount: 1000.00, date: new Date(2888, 2, 28)},
   ];
 
+  const preMisDocs = [
+    { id: 'd1', title: 'Bonus Clause', date: new Date(28888, 1, 28)},
+    { id: 'd2', title: 'Forfeiture Clause', date: new Date(2888, 1, 28)},
+    { id: 'd3', title: 'Standing Mission Frag Order', date: new Date(2888, 1, 28)},
+  ];
+
   return (
     <div>
-      <h2>Pre-Contract Expenses</h2>
+      <h2>Pre-Mission Expenses</h2>
 
       {/* can call information using just the attributes from above as well */}
 
@@ -35,6 +42,10 @@ function App() {
         amount={expenses[3].amount}
         date={expenses[3].date}  
       />
+
+    <h2>Mission Documents Status</h2>
+
+
     </div>
   );
 }
