@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 5.5rem;
     height: 5.5rem;
-    border: 1px solid #1ad36d;
+    border: 1px dotted #1ad36d;
     background-color: black;
     color: #1ad36d;
     border-radius: 12px;
