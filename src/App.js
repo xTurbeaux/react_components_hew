@@ -1,8 +1,8 @@
-import  ExpenseItem from './components/ExpenseItem';
-import  PreMisDocs from './components/PreMisDocs';
+import ExpenseItem from './components/ExpenseItem';
+import PreMisDocs from './components/PreMisDocs';
 import ShipVariant from './components/ShipVariant';
 
-import './components/Global.css';
+import './components/css/Global.css';
 
 function App() {
 
@@ -27,6 +27,10 @@ function App() {
 
   return (
     <div>
+
+      {/* <div>
+        <h1>MU-Th-R Pre-Mission Listing</h1>
+      </div> */}
 
       <div>
         <h1>Pre-Mission Expenses</h1>

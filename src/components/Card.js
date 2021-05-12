@@ -1,4 +1,4 @@
-import './Card.css';
+import './css/Card.css';
 
 function Card(data) {
     const classes = 'card ' + data.className;

@@ -3,20 +3,20 @@ import ExpenseDate from './ExpenseDate';
 // import ShipVariant from './ShipVariant';
 import Card from './Card';
 
-import './ExpenseItem.css';
-import './ExpenseDate.css';
+import './css/ExpenseItem.css';
+import './css/ExpenseDate.css';
 
 
 
 function PreMisDocs(data) {
 
     return (
-        <Card className="expense-item">
+        <Card className="expense-item flex">
             <ExpenseDate date={data.date} />
             <div className="expense-item__description">
                 <h2>{data.title}</h2>
-                <Status className="expense-item__price"/>
             </div>
+            <Status className="flex1"/>
         </Card>
     )
 }

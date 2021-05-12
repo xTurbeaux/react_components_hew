@@ -1,16 +1,16 @@
-import './ExpenseItem.css';
-import './ExpenseDate.css';
-import './ExpenseItem.css';
+import './css/ExpenseDate.css';
+import './css/ExpenseItem.css';
+
 import Card from './Card';
 
 function Status() {
-    const isSigned = 'No';
+    const isSigned = 'Signed | Negative';
 
     return (
-        <Card className="expense-item">
-            <div className="expense-date">
-                <div className="expense-item">{isSigned}</div>
-            </div>
+        <Card className="flex">
+            <div className="expense-item__description"> 
+                    <div className="expense-item__price flex1">{isSigned}</div>
+              </div> 
         </Card>
     );
 }
