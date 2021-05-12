@@ -1,16 +1,17 @@
 import './ExpenseItem.css';
 import './ExpenseDate.css';
-
+import './ExpenseItem.css';
+import Card from './Card';
 
 function Status() {
     const isSigned = 'No';
 
     return (
-        <div>
+        <Card className="expense-item">
             <div className="expense-date">
-                <div className="expense-item__day">{isSigned}</div>
+                <div className="expense-item">{isSigned}</div>
             </div>
-        </div>
+        </Card>
     );
 }
 

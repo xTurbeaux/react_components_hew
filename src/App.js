@@ -29,7 +29,7 @@ function App() {
     <div>
 
       <div>
-        <h2>Pre-Mission Expenses</h2>
+        <h1>Pre-Mission Expenses</h1>
 
         {/* can call information using just the attributes from above as well */}
 
@@ -54,7 +54,7 @@ function App() {
           date={expenses[3].date}  
         />
 
-      <h2>Mission Documents Status</h2>
+      <h1>Mission Documents Status</h1>
 
         <PreMisDocs 
           title={preMisDocs[0].title}
@@ -69,7 +69,7 @@ function App() {
           date={preMisDocs[2].date} 
         />
 
-      <h2>Mission Ship Variant</h2>
+      <h1>Mission Ship Variant</h1>
 
         <ShipVariant 
           title={model[1].title}
