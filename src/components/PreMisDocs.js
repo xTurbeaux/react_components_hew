@@ -1,6 +1,6 @@
 import Status from './Status';
 import ExpenseDate from './ExpenseDate';
-import ShipVariant from './ShipVariant';
+// import ShipVariant from './ShipVariant';
 
 import './ExpenseItem.css';
 import './ExpenseDate.css';
