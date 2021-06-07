@@ -1,0 +1,32 @@
+.new-amount__controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .new-amount__control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .new-amount__control input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    color: #199e55;
+    border: 1px solid ;
+    width: 20rem;
+    max-width: 100%;
+    background-color: #111111;
+  }
+  
+  .new-amount__actions {
+    text-align: right;
+  }
+
+  .t {
+    color: #199e55;
+}

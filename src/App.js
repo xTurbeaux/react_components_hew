@@ -1,6 +1,7 @@
 import ExpenseItem from './components/ExpenseItem';
 import PreMisDocs from './components/PreMisDocs';
 import ShipVariant from './components/ShipVariant';
+import NewAmount from './components/NewAmount/NewAmount'
 
 import './components/css/Global.css';
 
@@ -36,6 +37,8 @@ function App() {
         <h1>Pre-Mission Expenses</h1>
 
         {/* can call information using just the attributes from above as well */}
+
+        <NewAmount />
 
         <ExpenseItem 
           title={expenses[0].title}
