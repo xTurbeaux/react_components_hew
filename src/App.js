@@ -26,6 +26,11 @@ function App() {
     { id: 'm2', title: 'M8B', date: new Date(2887, 10, 20)}
 ]
 
+  const addAmountHandler = amount => {
+    console.log('In App.js');
+    console.log(amount);
+  }
+
   return (
     <div>
 
@@ -38,7 +43,7 @@ function App() {
 
         {/* can call information using just the attributes from above as well */}
 
-        <NewAmount />
+        <NewAmount onAddAmount={addAmountHandler}/>
 
         <ExpenseItem 
           title={expenses[0].title}

@@ -3,7 +3,7 @@ import React from 'react'; //jsx under the hood uses this library
 import '../css/NewAmount.css'
 import AmountForm from './AmountForm';
 
-const NewAmount = () => {
+const NewAmount = (data) => {
 
     
     const saveAmountDataHandler = (enteredAmountData) => {
@@ -11,7 +11,7 @@ const NewAmount = () => {
             ...enteredAmountData,
             id: Math.random().toString()
         };
-        console.log(amountData);
+        data.onAddAmount(amountData);
     };
     
 
