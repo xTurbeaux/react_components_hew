@@ -1,14 +1,15 @@
-import ExpenseItem from './components/ExpenseItem';
+// import ExpenseItem from './components/ExpenseItem';
 import PreMisDocs from './components/PreMisDocs';
 import ShipVariant from './components/ShipVariant';
-import NewAmount from './components/NewAmount/NewAmount'
+import NewAmount from './components/NewAmount/NewAmount';
+import Amounts from './components/Amounts';
 
 import './components/css/Global.css';
 
 function App() {
 
   // will soon be calls to the db for this info 
-  const expenses = [
+  const amounts = [
     { id: 'e1', title: 'Asset Insurance', amount: 10000.00, date: new Date(2888, 2, 28)},
     { id: 'e2', title: 'Life Insurance', amount: 100000.00, date: new Date(2888, 2, 28)},
     { id: 'e3', title: 'Food Billing', amount: 1000.00, date: new Date(2888, 2, 28)},
@@ -44,8 +45,9 @@ function App() {
         {/* can call information using just the attributes from above as well */}
 
         <NewAmount onAddAmount={addAmountHandler}/>
+        <Amounts items={amounts}/>
 
-        <ExpenseItem 
+        {/* <ExpenseItem 
           title={expenses[0].title}
           amount={expenses[0].amount}
           date={expenses[0].date}  
@@ -64,7 +66,7 @@ function App() {
           title={expenses[3].title}
           amount={expenses[3].amount}
           date={expenses[3].date}  
-        />
+        /> */}
 
       <h1>Mission Documents Status</h1>
 
