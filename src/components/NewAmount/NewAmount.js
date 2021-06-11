@@ -2,12 +2,13 @@ import React from 'react'; //jsx under the hood uses this library
 // rendering a form for users to add new amounts for various items
 import '../css/NewAmount.css'
 import AmountForm from './AmountForm';
+
 const NewAmount = () => {
 
     
-    const saveAmountDataHandler = (enteredExpenseData) => {
+    const saveAmountDataHandler = (enteredAmountData) => {
         const amountData = {
-            ...enteredExpenseData,
+            ...enteredAmountData,
             id: Math.random().toString()
         };
         console.log(amountData);

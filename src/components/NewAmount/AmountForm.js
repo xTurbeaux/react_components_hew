@@ -59,6 +59,7 @@ const AmountForm = (data) => {
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
+        console.log(amountData);
     };
 
     return (
@@ -86,9 +87,9 @@ const AmountForm = (data) => {
                     max="3000-01-04" 
                     onChange={dateChangeHandler} />
                 </div>
-            </div>
-            <div className="new-amount__actions">
-                <button type="submit">Update</button>
+                <div className="new-amount__actions">
+                    <button type="submit">Update</button>
+                </div>
             </div>
         </form>
     );
