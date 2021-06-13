@@ -1,5 +1,5 @@
-import './css/ExpenseItem.css';
-import './css/ExpenseDate.css';
+import '../css/ExpenseItem.css';
+import '../css/ExpenseDate.css';
 
 
 function ExpenseDate(data) {

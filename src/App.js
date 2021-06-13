@@ -1,8 +1,8 @@
 // import ExpenseItem from './components/ExpenseItem';
-import PreMisDocs from './components/PreMisDocs';
-import ShipVariant from './components/ShipVariant';
+import PreMisDocs from './components/totals/PreMisDocs';
+import ShipVariant from './components/totals/ShipVariant';
 import NewAmount from './components/NewAmount/NewAmount';
-import Amounts from './components/Amounts';
+import Amounts from './components/totals/Amounts';
 
 import './components/css/Global.css';
 

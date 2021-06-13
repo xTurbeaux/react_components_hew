@@ -1,7 +1,7 @@
 import ExpenseDate from './ExpenseDate';
-import './css/ExpenseDate.css';
-import './css/ExpenseItem.css';
-import Card from './Card';
+import '../css/ExpenseDate.css';
+import '../css/ExpenseItem.css';
+import Card from '../ui/Card';
 
 
 function ShipVariant(data) {

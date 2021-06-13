@@ -1,10 +1,10 @@
 import Status from './Status';
 import ExpenseDate from './ExpenseDate';
 // import ShipVariant from './ShipVariant';
-import Card from './Card';
+import Card from '../ui/Card';
 
-import './css/ExpenseItem.css';
-import './css/ExpenseDate.css';
+import '../css/ExpenseItem.css';
+import '../css/ExpenseDate.css';
 
 
 

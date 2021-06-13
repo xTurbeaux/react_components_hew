@@ -34,7 +34,7 @@
   .new-amount__actions {
     flex: 1;
     text-align: center;
-    flex-direction: row;
+    /* flex-direction: row; */
   }
 
   .t {
