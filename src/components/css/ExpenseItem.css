@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    margin: 3rem;
+    /* margin: 3rem; */
     background-color: black;
     border-bottom: dotted;
     border-bottom-width: .5px !important;
