@@ -11,13 +11,19 @@ const Amounts = (data) => {
 
     const filterChangeHandler = (selectedYear) => {
         setFilteredYear(selectedYear);
-    }
+    };
+
+    // Only items matching the fitered year will be kept in the filteredExpenses array
+
+    const filteredExpenses = data.items.filter(expense => {
+        return expense.date.getFullYear().toString() === filteredYear;
+    });
 
     return (
         <div>
             <Card className="amounts">
                 <Filter selected={filteredYear} onChangeFilter={filterChangeHandler} />
-                {data.items.map((expense) => (
+                {filteredExpenses.map((expense) => (
                     <ExpenseItem 
                         key={expense.id}
                         title={expense.title} 
