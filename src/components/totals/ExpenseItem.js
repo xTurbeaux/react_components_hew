@@ -5,7 +5,7 @@ import '../css/ExpenseItem.css';
 
 // Data = Props
 
-const ExpenseAmount = (data) => {
+const ExpenseItem = (data) => {
     // react hook for functions, hooks start with use in their name
 
     // first element is a pointer to the actual value (title), second is the function to change the title (setTitle)
@@ -24,9 +24,8 @@ const ExpenseAmount = (data) => {
                 <h2>{data.title}</h2>
                 <div className="expense-item__price">${data.amount}</div>
             </div>
-            {/* <button onClick={clickHandler}>Edit Amount</button> */}
         </Card>
     );
-}
+};
 
-export default ExpenseAmount;
+export default ExpenseItem;

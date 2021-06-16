@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import ExpenseItem from './ExpenseItem';
 import Card from '../ui/Card';
 import '../css/Amounts.css';
@@ -10,7 +9,7 @@ const Amounts = (data) => {
 
     const [filteredYear, setFilteredYear] = useState('2880');
 
-    const filterChangeHandler = selectedYear => {
+    const filterChangeHandler = (selectedYear) => {
         setFilteredYear(selectedYear);
     }
 
@@ -18,7 +17,14 @@ const Amounts = (data) => {
         <div>
             <Card className="amounts">
                 <Filter selected={filteredYear} onChangeFilter={filterChangeHandler} />
-                <ExpenseItem 
+                {data.items.map((expense) => (
+                    <ExpenseItem 
+                        title={expense.title} 
+                        amount={expense.amount} 
+                        date={expense.date} 
+                    />
+                ))}
+                {/* <ExpenseItem 
                 title={data.items[0].title}
                 amount={data.items[0].amount}
                 date={data.items[0].date}  
@@ -37,7 +43,7 @@ const Amounts = (data) => {
                 title={data.items[3].title}
                 amount={data.items[3].amount}
                 date={data.items[3].date}  
-                />
+                /> */}
             </Card>
         </div>
     );

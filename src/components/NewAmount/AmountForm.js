@@ -49,17 +49,17 @@ const AmountForm = (data) => {
         // prevents the default of the request being sent staying on the currently loaded page
         event.preventDefault();
 
-        const amountData = {
+        const expenseData = {
             title: enteredTitle,
             amount: enteredAmount,
             date: new Date(enteredDate)
         };
 
-        data.onSaveAmountData();
+        data.onSaveExpenseData(expenseData);
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
-        console.log(amountData);
+        // console.log(amountData);
     };
 
     return (

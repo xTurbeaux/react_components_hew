@@ -6,18 +6,18 @@ import AmountForm from './AmountForm';
 const NewAmount = (data) => {
 
     
-    const saveAmountDataHandler = (enteredAmountData) => {
-        const amountData = {
-            ...enteredAmountData,
+    const saveExpenseDataHandler = (enteredExpenseData) => {
+        const expenseData = {
+            ...enteredExpenseData,
             id: Math.random().toString()
         };
-        data.onAddAmount(amountData);
+        data.onAddExpense(expenseData);
     };
     
 
     return (
         <div className="new-amount">
-            <AmountForm onSaveAmountData={saveAmountDataHandler} />
+            <AmountForm onSaveExpenseData={saveExpenseDataHandler} />
         </div>
     );
 };
