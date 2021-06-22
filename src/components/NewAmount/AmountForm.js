@@ -51,7 +51,7 @@ const AmountForm = (data) => {
 
         const expenseData = {
             title: enteredTitle,
-            amount: enteredAmount,
+            amount: +enteredAmount,
             date: new Date(enteredDate)
         };
 
@@ -88,6 +88,7 @@ const AmountForm = (data) => {
                     onChange={dateChangeHandler} />
                 </div>
                 <div className="new-amount__actions">
+                    <button type="button" onClick={data.onCancel}>Cancel</button>
                     <button type="submit">Update</button>
                 </div>
             </div>

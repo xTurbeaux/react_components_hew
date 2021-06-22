@@ -3,7 +3,7 @@
 // import ShipVariant from './components/totals/ShipVariant';
 import React, { useState } from 'react';
 import NewAmount from './components/NewAmount/NewAmount';
-import Amounts from './components/totals/Amounts';
+import Amounts from './components/Totals/Amounts';
 
 import './components/css/Global.css';
 
